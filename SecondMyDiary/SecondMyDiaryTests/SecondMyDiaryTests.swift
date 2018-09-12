@@ -23,17 +23,46 @@ class SecondMyDiaryTests: XCTestCase {
     
     func testAddEntryToJounal() {
         // setup
-        let jounal = InMemoryDiary()
+        let journal = InMemoryDiary()
         let newEntry = Entry(id: 1, createdAt: Date(), text: "일기")
 
         // run
-        jounal.add(newEntry)
+        journal.add(newEntry)
 
         // verify
-        let entryInJounal: Entry? = jounal.entry(with: 1)
+        let entryInJounal: Entry? = journal.entry(with: 1)
         
         XCTAssertEqual(entryInJounal, .some(newEntry))
         XCTAssertTrue(entryInJounal === newEntry)
         XCTAssertTrue(entryInJounal?.isIdentical(to: newEntry) == true)
+    }
+    
+    func testGetEntryWithId() {
+        // Setup
+        let oldEntry = Entry(id: 1, createdAt: Date(), text: "일기")
+        let journal = InMemoryDiary(entries: [oldEntry])
+        
+        // Run
+        let entry = journal.entry(with: 1)
+        
+        // Verify
+        XCTAssertEqual(entry, .some(oldEntry))
+        XCTAssertTrue(entry?.isIdentical(to: oldEntry) == true)
+    }
+    
+    func testUpdateEntry() {
+        // Setup
+        let oldEntry = Entry(id: 1, createdAt: Date(), text: "일기")
+        let journal = InMemoryDiary(entries: [oldEntry])
+        
+        // Run
+        oldEntry.text = "일기가 수정 되었습니다."
+        journal.update(oldEntry)
+        
+        // Verify
+        let entry = journal.entry(with: 1)
+        XCTAssertEqual(entry, .some(oldEntry))
+        XCTAssertTrue(entry?.isIdentical(to: oldEntry) == true)
+        XCTAssertEqual(entry?.text, .some("일기가 수정 되었습니다."))
     }
 }
