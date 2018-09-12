@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DBDB9962148ADB700E2927B /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9952148ADB700E2927B /* Entry.swift */; };
+		9DBDB99E2148B61400E2927B /* SecondMyDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB99D2148B61400E2927B /* SecondMyDiaryTests.swift */; };
 		9DF9A77821463588005CFCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9A77721463588005CFCBD /* AppDelegate.swift */; };
 		9DF9A77A21463588005CFCBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9A77921463588005CFCBD /* ViewController.swift */; };
 		9DF9A77D21463588005CFCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9A77B21463588005CFCBD /* Main.storyboard */; };
@@ -14,7 +16,21 @@
 		9DF9A78221463589005CFCBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9A78021463589005CFCBD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9DBDB9A02148B61400E2927B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DF9A76C21463587005CFCBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DF9A77321463588005CFCBD;
+			remoteInfo = SecondMyDiary;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		9DBDB9952148ADB700E2927B /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		9DBDB99B2148B61300E2927B /* SecondMyDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondMyDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBDB99D2148B61400E2927B /* SecondMyDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMyDiaryTests.swift; sourceTree = "<group>"; };
+		9DBDB99F2148B61400E2927B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF9A77421463588005CFCBD /* SecondMyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondMyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF9A77721463588005CFCBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF9A77921463588005CFCBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9DBDB9982148B61300E2927B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DF9A77121463588005CFCBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +58,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DBDB9942148AD6F00E2927B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9DF9A78D21463695005CFCBD /* Shared */,
+				9DF9A78C2146368A005CFCBD /* Model */,
+				9DF9A78B21463675005CFCBD /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9DBDB99C2148B61400E2927B /* SecondMyDiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DBDB99D2148B61400E2927B /* SecondMyDiaryTests.swift */,
+				9DBDB99F2148B61400E2927B /* Info.plist */,
+			);
+			path = SecondMyDiaryTests;
+			sourceTree = "<group>";
+		};
 		9DF9A76B21463587005CFCBD = {
 			isa = PBXGroup;
 			children = (
 				9DF9A77621463588005CFCBD /* SecondMyDiary */,
+				9DBDB99C2148B61400E2927B /* SecondMyDiaryTests */,
 				9DF9A77521463588005CFCBD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				9DF9A77421463588005CFCBD /* SecondMyDiary.app */,
+				9DBDB99B2148B61300E2927B /* SecondMyDiaryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,9 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				9DF9A78321463589005CFCBD /* Info.plist */,
-				9DF9A78D21463695005CFCBD /* Shared */,
-				9DF9A78C2146368A005CFCBD /* Model */,
-				9DF9A78B21463675005CFCBD /* Controllers */,
+				9DBDB9942148AD6F00E2927B /* Sources */,
 				9DF9A78A21463663005CFCBD /* Storyboards */,
 				9DF9A7892146364B005CFCBD /* Resources */,
 			);
@@ -92,6 +134,7 @@
 		9DF9A78C2146368A005CFCBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9DBDB9952148ADB700E2927B /* Entry.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +150,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9DBDB99A2148B61300E2927B /* SecondMyDiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DBDB9A22148B61400E2927B /* Build configuration list for PBXNativeTarget "SecondMyDiaryTests" */;
+			buildPhases = (
+				9DBDB9972148B61300E2927B /* Sources */,
+				9DBDB9982148B61300E2927B /* Frameworks */,
+				9DBDB9992148B61300E2927B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DBDB9A12148B61400E2927B /* PBXTargetDependency */,
+			);
+			name = SecondMyDiaryTests;
+			productName = SecondMyDiaryTests;
+			productReference = 9DBDB99B2148B61300E2927B /* SecondMyDiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9DF9A77321463588005CFCBD /* SecondMyDiary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF9A78621463589005CFCBD /* Build configuration list for PBXNativeTarget "SecondMyDiary" */;
@@ -134,6 +195,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "김종서";
 				TargetAttributes = {
+					9DBDB99A2148B61300E2927B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9DF9A77321463588005CFCBD;
+					};
 					9DF9A77321463588005CFCBD = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -153,11 +218,19 @@
 			projectRoot = "";
 			targets = (
 				9DF9A77321463588005CFCBD /* SecondMyDiary */,
+				9DBDB99A2148B61300E2927B /* SecondMyDiaryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9DBDB9992148B61300E2927B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DF9A77221463588005CFCBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,16 +244,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9DBDB9972148B61300E2927B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DBDB99E2148B61400E2927B /* SecondMyDiaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DF9A77021463588005CFCBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBDB9962148ADB700E2927B /* Entry.swift in Sources */,
 				9DF9A77A21463588005CFCBD /* ViewController.swift in Sources */,
 				9DF9A77821463588005CFCBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DBDB9A12148B61400E2927B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DF9A77321463588005CFCBD /* SecondMyDiary */;
+			targetProxy = 9DBDB9A02148B61400E2927B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9DF9A77B21463588005CFCBD /* Main.storyboard */ = {
@@ -202,6 +292,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9DBDB9A32148B61400E2927B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecondMyDiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asvals.SecondMyDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecondMyDiary.app/SecondMyDiary";
+			};
+			name = Debug;
+		};
+		9DBDB9A42148B61400E2927B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecondMyDiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asvals.SecondMyDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecondMyDiary.app/SecondMyDiary";
+			};
+			name = Release;
+		};
 		9DF9A78421463589005CFCBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,6 +481,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9DBDB9A22148B61400E2927B /* Build configuration list for PBXNativeTarget "SecondMyDiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DBDB9A32148B61400E2927B /* Debug */,
+				9DBDB9A42148B61400E2927B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9DF9A76F21463587005CFCBD /* Build configuration list for PBXProject "SecondMyDiary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
