@@ -10,14 +10,14 @@ import XCTest
 @testable import SecondMyDiary
 
 class SecondMyDiaryTests: XCTestCase {
-    func testExample() {
+    func testEditEntryText() {
         // setup
         let entry = Entry(id: 0, createdAt: Date(), text: "첫 번째 일기")
         
         // run
-        entry.text = "첫 번째 수정"
+        entry.text = "첫 번째 테스트"
         
         // verify
-        XCTAssertEqual(entry.text, "첫 번째 수정")
+        XCTAssertEqual(entry.text, "첫 번째 테스트")
     }
 }
