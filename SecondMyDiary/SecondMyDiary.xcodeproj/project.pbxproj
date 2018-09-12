@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9DBDB9962148ADB700E2927B /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9952148ADB700E2927B /* Entry.swift */; };
 		9DBDB99E2148B61400E2927B /* SecondMyDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB99D2148B61400E2927B /* SecondMyDiaryTests.swift */; };
+		9DBDB9A62148DA3900E2927B /* SecondMyDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9A52148DA3900E2927B /* SecondMyDiary.swift */; };
 		9DF9A77821463588005CFCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9A77721463588005CFCBD /* AppDelegate.swift */; };
 		9DF9A77A21463588005CFCBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9A77921463588005CFCBD /* ViewController.swift */; };
 		9DF9A77D21463588005CFCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9A77B21463588005CFCBD /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		9DBDB99B2148B61300E2927B /* SecondMyDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondMyDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBDB99D2148B61400E2927B /* SecondMyDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMyDiaryTests.swift; sourceTree = "<group>"; };
 		9DBDB99F2148B61400E2927B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DBDB9A52148DA3900E2927B /* SecondMyDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMyDiary.swift; sourceTree = "<group>"; };
 		9DF9A77421463588005CFCBD /* SecondMyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondMyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF9A77721463588005CFCBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF9A77921463588005CFCBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9DBDB9952148ADB700E2927B /* Entry.swift */,
+				9DBDB9A52148DA3900E2927B /* SecondMyDiary.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DBDB9962148ADB700E2927B /* Entry.swift in Sources */,
+				9DBDB9A62148DA3900E2927B /* SecondMyDiary.swift in Sources */,
 				9DF9A77A21463588005CFCBD /* ViewController.swift in Sources */,
 				9DF9A77821463588005CFCBD /* AppDelegate.swift in Sources */,
 			);
