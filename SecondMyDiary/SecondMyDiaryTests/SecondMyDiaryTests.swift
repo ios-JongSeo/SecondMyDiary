@@ -20,4 +20,20 @@ class SecondMyDiaryTests: XCTestCase {
         // verify
         XCTAssertEqual(entry.text, "첫 번째 테스트")
     }
+    
+    func testAddEntryToJounal() {
+        // setup
+        let jounal = InMemoryDiary()
+        let newEntry = Entry(id: 1, createdAt: Date(), text: "일기")
+
+        // run
+        jounal.add(newEntry)
+
+        // verify
+        let entryInJounal: Entry? = jounal.entry(with: 1)
+        
+        XCTAssertEqual(entryInJounal, .some(newEntry))
+        XCTAssertTrue(entryInJounal === newEntry)
+        XCTAssertTrue(entryInJounal?.isIdentical(to: newEntry) == true)
+    }
 }
