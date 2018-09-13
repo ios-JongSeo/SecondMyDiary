@@ -38,7 +38,7 @@ class InMemoryDiary: secondMyDiary {
     }
     
     func remove(_ entry: Entry) {
-        
+        entries[entry.id] = nil
     }
     
     func entry(with id: Int) -> Entry? {
