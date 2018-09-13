@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33A5899F3A60889F2853AA0C /* Pods_SecondMyDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4561DB1E0DE8BEA0928C8EEE /* Pods_SecondMyDiaryTests.framework */; };
+		8221E50691044BBA20D81FD5 /* Pods_SecondMyDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978F05C5406546A343305F33 /* Pods_SecondMyDiary.framework */; };
 		9DBDB9962148ADB700E2927B /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9952148ADB700E2927B /* Entry.swift */; };
 		9DBDB99E2148B61400E2927B /* SecondMyDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB99D2148B61400E2927B /* SecondMyDiaryTests.swift */; };
 		9DBDB9A62148DA3900E2927B /* SecondMyDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9A52148DA3900E2927B /* SecondMyDiary.swift */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4561DB1E0DE8BEA0928C8EEE /* Pods_SecondMyDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondMyDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3832451A277B8A279029C4 /* Pods-SecondMyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondMyDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecondMyDiary/Pods-SecondMyDiary.release.xcconfig"; sourceTree = "<group>"; };
+		978F05C5406546A343305F33 /* Pods_SecondMyDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondMyDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBDB9952148ADB700E2927B /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		9DBDB99B2148B61300E2927B /* SecondMyDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondMyDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBDB99D2148B61400E2927B /* SecondMyDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMyDiaryTests.swift; sourceTree = "<group>"; };
@@ -42,6 +47,9 @@
 		9DF9A77E21463589005CFCBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DF9A78121463589005CFCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DF9A78321463589005CFCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9E79696B42D7400BBC2E7E /* Pods-SecondMyDiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondMyDiaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecondMyDiaryTests/Pods-SecondMyDiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F39815099E60EF2982896B31 /* Pods-SecondMyDiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondMyDiaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecondMyDiaryTests/Pods-SecondMyDiaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7B14F05A97807521E17A7E4 /* Pods-SecondMyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondMyDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecondMyDiary/Pods-SecondMyDiary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A5899F3A60889F2853AA0C /* Pods_SecondMyDiaryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +65,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8221E50691044BBA20D81FD5 /* Pods_SecondMyDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		993EB337E77D79B4347724E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				978F05C5406546A343305F33 /* Pods_SecondMyDiary.framework */,
+				4561DB1E0DE8BEA0928C8EEE /* Pods_SecondMyDiaryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9DBDB9942148AD6F00E2927B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +106,8 @@
 				9DF9A77621463588005CFCBD /* SecondMyDiary */,
 				9DBDB99C2148B61400E2927B /* SecondMyDiaryTests */,
 				9DF9A77521463588005CFCBD /* Products */,
+				C2C652ADF0723B25122A61B1 /* Pods */,
+				993EB337E77D79B4347724E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +174,17 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		C2C652ADF0723B25122A61B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7B14F05A97807521E17A7E4 /* Pods-SecondMyDiary.debug.xcconfig */,
+				5F3832451A277B8A279029C4 /* Pods-SecondMyDiary.release.xcconfig */,
+				CD9E79696B42D7400BBC2E7E /* Pods-SecondMyDiaryTests.debug.xcconfig */,
+				F39815099E60EF2982896B31 /* Pods-SecondMyDiaryTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DBDB9A22148B61400E2927B /* Build configuration list for PBXNativeTarget "SecondMyDiaryTests" */;
 			buildPhases = (
+				7FC46FDFDA26A4B229E1B287 /* [CP] Check Pods Manifest.lock */,
 				9DBDB9972148B61300E2927B /* Sources */,
 				9DBDB9982148B61300E2927B /* Frameworks */,
 				9DBDB9992148B61300E2927B /* Resources */,
+				DCEE25C30DD3D78ED4F91EF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF9A78621463589005CFCBD /* Build configuration list for PBXNativeTarget "SecondMyDiary" */;
 			buildPhases = (
+				294360C56983C468B10BB5D2 /* [CP] Check Pods Manifest.lock */,
 				9DF9A77021463588005CFCBD /* Sources */,
 				9DF9A77121463588005CFCBD /* Frameworks */,
 				9DF9A77221463588005CFCBD /* Resources */,
@@ -249,6 +284,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		294360C56983C468B10BB5D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecondMyDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FC46FDFDA26A4B229E1B287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecondMyDiaryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCEE25C30DD3D78ED4F91EF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SecondMyDiaryTests/Pods-SecondMyDiaryTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecondMyDiaryTests/Pods-SecondMyDiaryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9DBDB9972148B61300E2927B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -302,6 +394,7 @@
 /* Begin XCBuildConfiguration section */
 		9DBDB9A32148B61400E2927B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9E79696B42D7400BBC2E7E /* Pods-SecondMyDiaryTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +414,7 @@
 		};
 		9DBDB9A42148B61400E2927B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F39815099E60EF2982896B31 /* Pods-SecondMyDiaryTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +548,7 @@
 		};
 		9DF9A78721463589005CFCBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B14F05A97807521E17A7E4 /* Pods-SecondMyDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +566,7 @@
 		};
 		9DF9A78821463589005CFCBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3832451A277B8A279029C4 /* Pods-SecondMyDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
