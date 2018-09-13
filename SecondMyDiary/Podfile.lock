@@ -1,0 +1,16 @@
+PODS:
+  - Nimble (7.0.3)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+
+PODFILE CHECKSUM: cf9423d1e69f323b96b05a6214d8bed7ebcd6cbd
+
+COCOAPODS: 1.5.3
