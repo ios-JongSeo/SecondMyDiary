@@ -14,7 +14,7 @@
 		9DBDB9A62148DA3900E2927B /* SecondMyDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9A52148DA3900E2927B /* SecondMyDiary.swift */; };
 		9DBDB9A82148F07A00E2927B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9A72148F07A00E2927B /* Identifiable.swift */; };
 		9DF9A77821463588005CFCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9A77721463588005CFCBD /* AppDelegate.swift */; };
-		9DF9A77A21463588005CFCBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9A77921463588005CFCBD /* ViewController.swift */; };
+		9DF9A77A21463588005CFCBD /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9A77921463588005CFCBD /* EntryViewController.swift */; };
 		9DF9A77D21463588005CFCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9A77B21463588005CFCBD /* Main.storyboard */; };
 		9DF9A77F21463589005CFCBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9A77E21463589005CFCBD /* Assets.xcassets */; };
 		9DF9A78221463589005CFCBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9A78021463589005CFCBD /* LaunchScreen.storyboard */; };
@@ -42,7 +42,7 @@
 		9DBDB9A72148F07A00E2927B /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		9DF9A77421463588005CFCBD /* SecondMyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondMyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF9A77721463588005CFCBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DF9A77921463588005CFCBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DF9A77921463588005CFCBD /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		9DF9A77C21463588005CFCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DF9A77E21463589005CFCBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DF9A78121463589005CFCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		9DF9A78B21463675005CFCBD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9DF9A77921463588005CFCBD /* ViewController.swift */,
+				9DF9A77921463588005CFCBD /* EntryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 			files = (
 				9DBDB9962148ADB700E2927B /* Entry.swift in Sources */,
 				9DBDB9A62148DA3900E2927B /* SecondMyDiary.swift in Sources */,
-				9DF9A77A21463588005CFCBD /* ViewController.swift in Sources */,
+				9DF9A77A21463588005CFCBD /* EntryViewController.swift in Sources */,
 				9DBDB9A82148F07A00E2927B /* Identifiable.swift in Sources */,
 				9DF9A77821463588005CFCBD /* AppDelegate.swift in Sources */,
 			);

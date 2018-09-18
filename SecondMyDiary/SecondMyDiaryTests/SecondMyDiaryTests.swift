@@ -10,9 +10,9 @@ import XCTest
 @testable import SecondMyDiary
 
 extension Entry {
-    static var dayBeforeYesterday: Entry { return Entry(id: 1, createdAt: Date.distantPast, text: "그저께 일기") }
-    static var yesterDay: Entry { return Entry(id: 2, createdAt: Date(), text: "어제 일기") }
-    static var today: Entry { return Entry(id: 3, createdAt: Date.distantFuture, text: "오늘 일기") }
+    static var dayBeforeYesterday: Entry { return Entry(id: UUID(),createdAt: Date.distantPast, text: "그저께 일기") }
+    static var yesterDay: Entry { return Entry(id: UUID(), createdAt: Date(), text: "어제 일기") }
+    static var today: Entry { return Entry(id: UUID(), createdAt: Date.distantFuture, text: "오늘 일기") }
 }
 
 class SecondMyDiaryTests: XCTestCase {
@@ -20,7 +20,7 @@ class SecondMyDiaryTests: XCTestCase {
     
     func testEditEntryText() {
         // setup
-        let entry = Entry(id: 0, createdAt: Date(), text: "첫 번째 일기")
+        let entry = Entry(id: UUID(), createdAt: Date(), text: "첫 번째 일기")
         
         // run
         entry.text = "첫 번째 테스트"
@@ -32,17 +32,17 @@ class SecondMyDiaryTests: XCTestCase {
     func testAddEntryToJounal() {
         // setup
         let journal = InMemoryDiary()
-        let newEntry = Entry(id: 1, createdAt: Date(), text: "일기")
+        let newEntry = Entry.today
 
         // run
         journal.add(newEntry)
 
         // verify
-        let entryInJounal: Entry? = journal.entry(with: 1)
+        let entryInJournal: Entry? = journal.entry(with: newEntry.id)
         
-        XCTAssertEqual(entryInJounal, .some(newEntry))
-        XCTAssertTrue(entryInJounal === newEntry)
-        XCTAssertTrue(entryInJounal?.isIdentical(to: newEntry) == true)
+        XCTAssertEqual(entryInJournal, .some(newEntry))
+//        XCTAssertTrue(entryInJounal === newEntry)
+        XCTAssertTrue(entryInJournal?.isIdentical(to: newEntry) == true)
     }
     
     func testGetEntryWithId() {
