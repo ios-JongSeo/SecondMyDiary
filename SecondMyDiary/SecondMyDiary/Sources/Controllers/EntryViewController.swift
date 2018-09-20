@@ -78,6 +78,7 @@ class EntryViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var textViewBottomConstraint: NSLayoutConstraint!
     
     let journal: secondMyDiary = InMemoryDiary()
     private var editingEntry: Entry?
@@ -88,11 +89,50 @@ class EntryViewController: UIViewController {
         textView.text = code
         
         button.addTarget(self, action: #selector(saveEntry(_:)), for: .touchUpInside)
+        
+        NotificationCenter.default
+            .addObserver(self,
+                         selector: #selector(handleKeyboardAppearance(_:)),
+                         name: NSNotification.Name.UIKeyboardWillShow,
+                         object: nil)
+        
+        NotificationCenter.default
+            .addObserver(self,
+                         selector: #selector(handleKeyboardAppearance(_:)),
+                         name: NSNotification.Name.UIKeyboardWillHide,
+                         object: nil)
+    }
+    
+    @objc func handleKeyboardAppearance(_ note: Notification) {
+        guard
+            let userInfo = note.userInfo,
+            let keyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as?
+                NSValue),
+            let duration = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as?
+                TimeInterval),
+            let curve = (userInfo[UIKeyboardAnimationCurveUserInfoKey] as?
+                UInt)
+            else { return }
+        
+        let isKeyboardWillShow: Bool = note.name == NSNotification.Name.UIKeyboardWillShow
+        let keyboardHeight = isKeyboardWillShow
+            ? keyboardFrame.cgRectValue.height
+            : 0
+        let animationOption = UIViewAnimationOptions.init(rawValue: curve)
+        
+        UIView.animate(withDuration: duration,
+                       delay: 0.0,
+                       options: animationOption,
+                       animations: {
+                            self.textViewBottomConstraint.constant = -keyboardHeight
+                            self.view.layoutIfNeeded()
+                        },
+                       completion: nil
+        )
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         textView.becomeFirstResponder()
     }
     
