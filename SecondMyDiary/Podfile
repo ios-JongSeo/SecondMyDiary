@@ -3,6 +3,7 @@ use_frameworks!
 inhibit_all_warnings!
 
 target :SecondMyDiary do
+  pod 'SnapKit'
   target :SecondMyDiaryTests do
     inherit! :search_paths
     pod 'Nimble', '~> 7.0.0'
