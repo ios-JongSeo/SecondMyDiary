@@ -10,6 +10,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Timeline View Controller-->
+        <scene sceneID="Nlx-Id-DWd">
+            <objects>
+                <viewController id="xdT-YX-Jpf" customClass="TimelineViewController" customModule="SecondMyDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MrE-y1-OZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L0-6J-0g3">
+                                <rect key="frame" x="166" y="323" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7L0-6J-0g3" firstAttribute="centerY" secondItem="MrE-y1-OZ0" secondAttribute="centerY" id="Eyc-ee-SKm"/>
+                            <constraint firstItem="7L0-6J-0g3" firstAttribute="centerX" secondItem="MrE-y1-OZ0" secondAttribute="centerX" id="vaY-T4-ttj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g2w-1G-KG4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6K8-d2-HE0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CUN-if-35y">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="wq3-8a-x6W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="entryCountLabel" destination="7L0-6J-0g3" id="wg1-na-bbe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3F-1o-RHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-514.39999999999998" y="133.5832083958021"/>
+        </scene>
         <!--Entry View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -46,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="117.39130434782609"/>
+            <point key="canvasLocation" x="369" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wsz-9w-Qnj">
@@ -59,12 +96,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XIV-6B-BCe"/>
+                        <segue destination="xdT-YX-Jpf" kind="relationship" relationship="rootViewController" id="La9-2R-6xM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owL-hu-STA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+            <point key="canvasLocation" x="-1370" y="135"/>
         </scene>
     </scenes>
 </document>
