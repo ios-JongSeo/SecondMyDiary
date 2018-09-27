@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		33A5899F3A60889F2853AA0C /* Pods_SecondMyDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4561DB1E0DE8BEA0928C8EEE /* Pods_SecondMyDiaryTests.framework */; };
 		8221E50691044BBA20D81FD5 /* Pods_SecondMyDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978F05C5406546A343305F33 /* Pods_SecondMyDiary.framework */; };
+		9D368A9F21548A7000C5D34D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D368A9E21548A7000C5D34D /* TimelineViewController.swift */; };
+		9D368AA12154D96800C5D34D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D368AA02154D96800C5D34D /* Environment.swift */; };
+		9D6AB01C21537C9700E45F4B /* UIKit+SecondMyDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6AB01B21537C9600E45F4B /* UIKit+SecondMyDiary.swift */; };
 		9DBDB9962148ADB700E2927B /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9952148ADB700E2927B /* Entry.swift */; };
 		9DBDB99E2148B61400E2927B /* SecondMyDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB99D2148B61400E2927B /* SecondMyDiaryTests.swift */; };
-		9DBDB9A62148DA3900E2927B /* SecondMyDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9A52148DA3900E2927B /* SecondMyDiary.swift */; };
+		9DBDB9A62148DA3900E2927B /* EntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9A52148DA3900E2927B /* EntryRepository.swift */; };
 		9DBDB9A82148F07A00E2927B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDB9A72148F07A00E2927B /* Identifiable.swift */; };
 		9DF9A77821463588005CFCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9A77721463588005CFCBD /* AppDelegate.swift */; };
 		9DF9A77A21463588005CFCBD /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9A77921463588005CFCBD /* EntryViewController.swift */; };
@@ -34,11 +37,14 @@
 		4561DB1E0DE8BEA0928C8EEE /* Pods_SecondMyDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondMyDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F3832451A277B8A279029C4 /* Pods-SecondMyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondMyDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecondMyDiary/Pods-SecondMyDiary.release.xcconfig"; sourceTree = "<group>"; };
 		978F05C5406546A343305F33 /* Pods_SecondMyDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondMyDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D368A9E21548A7000C5D34D /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		9D368AA02154D96800C5D34D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		9D6AB01B21537C9600E45F4B /* UIKit+SecondMyDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+SecondMyDiary.swift"; sourceTree = "<group>"; };
 		9DBDB9952148ADB700E2927B /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		9DBDB99B2148B61300E2927B /* SecondMyDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondMyDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBDB99D2148B61400E2927B /* SecondMyDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMyDiaryTests.swift; sourceTree = "<group>"; };
 		9DBDB99F2148B61400E2927B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DBDB9A52148DA3900E2927B /* SecondMyDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMyDiary.swift; sourceTree = "<group>"; };
+		9DBDB9A52148DA3900E2927B /* EntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRepository.swift; sourceTree = "<group>"; };
 		9DBDB9A72148F07A00E2927B /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		9DF9A77421463588005CFCBD /* SecondMyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondMyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF9A77721463588005CFCBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				9DF9A77921463588005CFCBD /* EntryViewController.swift */,
+				9D368A9E21548A7000C5D34D /* TimelineViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -160,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				9DBDB9952148ADB700E2927B /* Entry.swift */,
-				9DBDB9A52148DA3900E2927B /* SecondMyDiary.swift */,
+				9DBDB9A52148DA3900E2927B /* EntryRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +177,8 @@
 			children = (
 				9DF9A77721463588005CFCBD /* AppDelegate.swift */,
 				9DBDB9A72148F07A00E2927B /* Identifiable.swift */,
+				9D6AB01B21537C9600E45F4B /* UIKit+SecondMyDiary.swift */,
+				9D368AA02154D96800C5D34D /* Environment.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -354,9 +363,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6AB01C21537C9700E45F4B /* UIKit+SecondMyDiary.swift in Sources */,
+				9D368AA12154D96800C5D34D /* Environment.swift in Sources */,
 				9DBDB9962148ADB700E2927B /* Entry.swift in Sources */,
-				9DBDB9A62148DA3900E2927B /* SecondMyDiary.swift in Sources */,
+				9DBDB9A62148DA3900E2927B /* EntryRepository.swift in Sources */,
 				9DF9A77A21463588005CFCBD /* EntryViewController.swift in Sources */,
+				9D368A9F21548A7000C5D34D /* TimelineViewController.swift in Sources */,
 				9DBDB9A82148F07A00E2927B /* Identifiable.swift in Sources */,
 				9DF9A77821463588005CFCBD /* AppDelegate.swift in Sources */,
 			);
